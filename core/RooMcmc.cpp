@@ -116,7 +116,7 @@ namespace HS{
       //the means as parameter values does not seem to work...
       RooArgList saveFloatFinalList(*fChainData->get()) ;
 
-      AddFormulaToMCMCTree();
+      //AddFormulaToMCMCTree(); // TODO causes segfault in PROOF?
   
       //set paramters to mean values of post burn in distributions
       //     RooArgList saveFloatFinalList(*fChainData->get()) ;
