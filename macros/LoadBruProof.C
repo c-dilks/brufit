@@ -53,7 +53,7 @@ void LoadBruProof(Int_t Nworkers=1,TString Selection=""){
     sandbox=gEnv->GetValue("ProofLite.Sandbox","");
   }
   gSystem->Exec(Form("cp $BRUFIT/lib/libbrufit_rdict.pcm %s/cache/.",sandbox.Data()));
-  gProof->Load(TString(gSystem->Getenv("ROOTSYS"))+"/lib/libRooStats.so",kTRUE);
+  //gProof->Load(TString(gSystem->Getenv("ROOTSYS"))+"/lib/libRooStats.so",kTRUE);
   gProof->Load(BRUCODE+"/lib/libbrufit.so",kTRUE);
 
 }
